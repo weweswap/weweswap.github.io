@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# WEWESWAP Landing Page
+
+Welcome to the WEWESWAP Landing Page repository.
+
+## Overview
+
+This repository contains the source code for the WEWESWAP landing page, built using Next.js and React. The live website is available at [weweswap.com](http://weweswap.com/).
+
+## Project Structure
+
+The project follows a standard Next.js structure. Below is an overview of the main folders and files:
+
+```
+landing-page/
+├── public/               # Static assets such as images, fonts, etc.
+├── src/
+│   ├── components/       # React components used throughout the project
+│   ├── pages/            # Next.js pages
+│   ├── styles/           # CSS and styling files
+│   ├── utils/            # Utility functions
+│   └── ...
+├── .eslintrc.js          # ESLint configuration
+├── .gitignore            # Git ignore file
+├── next.config.js        # Next.js configuration
+├── package.json          # Project dependencies and scripts
+└── README.md             # Project documentation (this file)
+```
+
+For a detailed view of the project structure and files, please visit the [GitHub repository](https://github.com/weweswap/landing-page/).
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps.
 
-```bash
+### Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/weweswap/landing-page.git
+    cd landing-page
+    ```
+
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
+    or
+    ```sh
+    yarn install
+    ```
+
+### Running the Development Server
+
+To start the development server, run:
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
+or
+```sh
+yarn dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To build the project for production, run:
+```sh
+npm run build
+```
+or
+```sh
+yarn build
+```
 
-## Learn More
+The output will be in the `.next` folder, ready to be deployed.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions to improve WEWESWAP. To contribute, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+For any questions or feedback, please reach out to the project team through the [issues page](https://github.com/weweswap/landing-page/issues).
