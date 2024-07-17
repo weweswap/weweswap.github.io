@@ -1,22 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: 'VCR_OSD_MONO';
+  src: url('/fonts/VCR_OSD_MONO_1.001-1.ttf') format('ttf'),
+  url('/fonts/VCR_OSD_MONO_1.001 2.woff') format('woff'),
+  url('/fonts/VCR_OSD_MONO_1.001 2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Verdana';
+  src: url('/fonts/Verdana.ttf') format('ttf'),
+  url('/fonts/verdanab.eot') format('eot'),
+  url('/fonts/Verdana.woff') format('woff');
+}
 body {
-  color: #FFF;
-    background: rgb(0, 0, 0);
-      background-image: conic-gradient(from 180deg, #000, #00a682);
- 
+  color:#FFF;
+  overflow-x: hidden;
+  background: url(../public/img/bg-sec.jpg) center top no-repeat ;
+   background-size: cover;
+   font-family: 'VCR_OSD_MONO' !important;
 }
 p{
   line-height: 20px;
+  font-family: 'Verdana' !important;
 }
-.gradient-custom{
-  // background: linear-gradient( rgba(0, 0, 0, 1) 0%, rgba(51, 230, 191, 1) 100%);
-    box-shadow: -150px 0 100px 100px #33e6bf30;
+ul li{
+font-family: 'Verdana' !important;
 }
-.header-custom {
-  background: rgb(0, 0, 0);
-  background-image: conic-gradient(from 180deg,  #000,#33e6bf);
-  box-shadow: 0px 0 100px 100px #33e6bf30;
+#right-bg{
+  background: url(../public/img/elements-all.svg) center top no-repeat ;
+  background-size: cover;
+}
+.line-left{
+  background: url(../public/img/line-dots.png) top repeat-y ;
+  position: absolute;
+  left: -30px;
+  width: 15px;
+  height: 6200px;
 }
