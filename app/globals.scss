@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #FFF;
+    background: rgb(0, 0, 0);
+      background-image: conic-gradient(from 180deg, #000, #00a682);
+ 
+}
+p{
+  line-height: 20px;
+}
+.gradient-custom{
+  // background: linear-gradient( rgba(0, 0, 0, 1) 0%, rgba(51, 230, 191, 1) 100%);
+    box-shadow: -150px 0 100px 100px #33e6bf30;
+}
+.header-custom {
+  background: rgb(0, 0, 0);
+  background-image: conic-gradient(from 180deg,  #000,#33e6bf);
+  box-shadow: 0px 0 100px 100px #33e6bf30;
+}

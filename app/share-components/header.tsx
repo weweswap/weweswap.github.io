@@ -5,11 +5,11 @@ import Link from "next/link"
 
 export default function Header() {
     return (
-        <header>
+      <header className="">
 
 
-<nav className="">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav className="max-w-screen-xl mx-auto w-full">
+  <div className=" flex flex-wrap items-center justify-between p-4">
     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <Image width={32} height={32} src="/img/logo.png" className="h-8" alt="Flowbite Logo" />
     </Link>
