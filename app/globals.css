@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(0, 0, 0);
+  color: #FFF;
+}
+
+.header-custom {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(51, 230, 191, 1) 100%);
+}
+
+.main-content {
+  background-image: conic-gradient(#000, #33e6bf);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
