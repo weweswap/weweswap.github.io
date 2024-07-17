@@ -13,7 +13,7 @@ body {
 }
 
 .main-content {
-  background-image: conic-gradient(#000, #33e6bf);
+  background-image: conic-gradient(from 180deg,#33e6bf, #000 );
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
