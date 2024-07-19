@@ -7,18 +7,18 @@ export default function Sections() {
         <>
             <section className="header-custom" >
                 <div className="max-w-screen-xl mx-auto" >
-                    <div className="w-full text-center lg:text-left h-[450px] flex justify-center items-center flex-col p-4">
+                    <div className="w-full text-center lg:mt-20 lg:text-left h-[450px] flex justify-center items-center flex-col p-4">
                         <h1 className="text-8xl">
                             WEWE LOVE <br /> THE YIELDS
                         </h1>
                         <p className="text-4xl mt-2">Together We Earn</p>
                     </div>
-                    <div className="h-[300px]"></div>
+                    <div className="lg:h-[500px] h-[300px]"></div>
                     <div className="flex w-full md:flex-nowrap flex-wrap" >
                     <Image src="/img/section-one.svg" width={400} height={400} alt="" 
-                    className="w-full object-cover h-[400px] block lg:hidden" />
+                    className="w-full object-cover h-[400px] block md:hidden" />
 
-                        <div className="md:w-[50%] w-full lg:mr-20 mr-0  py-2  md:text-white">
+                        <div className="lg:w-[50%] w-full lg:mr-20 mr-0  py-2  md:text-white">
                             <div className="w-full px-4">
                                 {/*  WAMMv1 */}
                                 <div className="lg:w-[70%] w-full" id="WAMMv1" >
@@ -41,7 +41,7 @@ export default function Sections() {
                                 </div>
                             </div>
                             <Image src="/img/section-two.svg" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden" />
+                                className="w-full h-[400px] block md:hidden" />
                             <div className="w-full px-4">
                                 {/* problems */}
                                 <div className="lg:w-[70%] w-full" id="problems">
@@ -54,15 +54,15 @@ export default function Sections() {
                                         The introduction of UniV3 and UniV4 aimed to improve capital efficiency by concentrating liquidity. However, this shift also brought increased complexity in user experience (UX). Key changes included:
                                     </p>
                                     <ul className="list-disc">
-                                        <li>Price Ranges: Users had to select specific price ranges for their liquidity.</li>
-                                        <li>NFT Positions: Liquidity positions were represented as non-fungible tokens (NFTs), adding a layer of abstraction.</li>
-                                        <li>Yield Accrual: Yield accrued outside the pool, allowing users to claim fees in both tokens, which was an improvement. However, the need for active management deterred retail users, pushing them back to the simpler, albeit less efficient, CP pools typically used for memecoins.</li>
+                                        <li className="mt-10">Price Ranges: Users had to select specific price ranges for their liquidity.</li>
+                                        <li className="mt-10">NFT Positions: Liquidity positions were represented as non-fungible tokens (NFTs), adding a layer of abstraction.</li>
+                                        <li className="mt-10">Yield Accrual: Yield accrued outside the pool, allowing users to claim fees in both tokens, which was an improvement. However, the need for active management deterred retail users, pushing them back to the simpler, albeit less efficient, CP pools typically used for memecoins.</li>
                                     </ul>
                                     <br/>
                                 </div>
                             </div>
                             <Image src="/img/section-three.svg" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden" />
+                                className="w-full h-[400px] block md:hidden" />
                             <div className="w-full px-4">
 
                                 {/* Solution */}
@@ -107,16 +107,19 @@ export default function Sections() {
                                 <div className="lg:w-[70%] w-full mt-36" id="problems">
                                     <h4 className="text-4xl">Pool Types</h4>
 
-                                    <p className="my-5 border-4 p-5 text-black rounded-lg  border-white">
-                                        {`“STABLE”: eg {USDT}-USDC  // +/- 1% range; 5bps`}
+                                    <p className="my-5 border-4 p-5 text-white rounded-lg  border-white">
+                                        {`“STABLE”:`} <br />
+                                        {`eg {USDT}-USDC  // +/- 1% range; 5bps`}
                                     </p>
                                     <p className="my-5 border-4 p-5 text-white rounded-lg  border-blue-700">
 
-                                        {`“BLUE-CHIP”: eg {WETH}-USDC // +/- 10% range; 30bps`}
+                                        {`“BLUE-CHIP”:`} <br />
+                                        {` eg {WETH}-USDC // +/- 10% range; 30bps`}
                                     </p>
                                     <p className="my-5 border-4 p-5 text-white rounded-lg  border-black">
 
-                                        {`“SMALL-CAP”: eg {WEWE}-USDC // +/- 50% range; 100bps`}
+                                        {`“SMALL-CAP”:`} <br /> 
+                                        {` eg {WEWE}-USDC // +/- 50% range; 100bps`}
                                     </p>
                                 </div>
                                 {/*  Simplified LP Ownership */}
@@ -140,7 +143,7 @@ export default function Sections() {
                                 </div>
                             </div>
                             <Image src="/img/section-four.svg" width={400} height={600} alt=""
-                                className="w-full object-cover h-[600px] block lg:hidden" />
+                                className="w-full  h-[600px] block md:hidden" />
                             <div className="w-full px-4">
                                 {/* Liquidity Bands */}
                                 <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
@@ -155,115 +158,149 @@ export default function Sections() {
                                     <div className="border-4 border-white rounded-lg w-full p-4">
                                         <h3 className="text-2xl">Stable</h3>
                                         <div className="flex justify-between items-center">
-                                            <span>Target Price Range</span>
-                                            <span>+/- 1%</span>
+                                            <span className="font-verdana">Target Price Range</span>
+                                            <span className="font-verdana font-bold">+/- 1%</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span>Fees</span>
-                                            <span>5BPS</span>
+                                            <span className="font-verdana">Fees</span>
+                                            <span className="font-verdana font-bold">5BPS</span>
                                         </div>
                                     </div>
                                     <div className="border-4 border-blue-700 rounded-lg w-full p-4 my-4">
                                         <h3 className="text-2xl">Blue-Chip</h3>
                                         <div className="flex justify-between items-center">
-                                            <span>Target Price Range</span>
-                                            <span>+/- 10%</span>
+                                            <span className="font-verdana">Target Price Range</span>
+                                            <span className="font-verdana font-bold">+/- 10%</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span>Fees</span>
-                                            <span>30BPS</span>
+                                            <span className="font-verdana">Fees</span>
+                                            <span className="font-verdana font-bold">30BPS</span>
                                         </div>
                                     </div>
                                     <div className="border-4 border-black rounded-lg w-full p-4">
                                         <h3 className="text-2xl">Small-Cap</h3>
                                         <div className="flex justify-between items-center">
-                                            <span>Target Price Range</span>
-                                            <span>+/- 50%</span>
+                                            <span className="font-verdana">Target Price Range</span>
+                                            <span className="font-verdana font-bold">+/- 50%</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span>Fees</span>
-                                            <span>100BPS</span>
+                                            <span className="font-verdana">Fees</span>
+                                            <span className="font-verdana font-bold">100BPS</span>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                            <div className="w-full lg:hidden block bg-[#33E6BF] p-4">
-                                <h2 className="text-3xl text-white-700">StablePool - 1%</h2>
-                                <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
-                                    <thead>
+                            <div className="w-full md:hidden block bg-[#33E6BF] p-4">
+                            <h2 className="text-3xl mt-[10%]">StablePool - 1%</h2>
+                            <table className="table-auto border-4 border-white p-4 w-full mb-20 text-black text-center">
+                                <thead>
+                                    <tr>
+                                        <th className="border-4 border-white font-bold text-base">BAND</th>
+                                        <th className="border-4 border-white font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base">
+                                        <div className="flex justify-center items-center">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-white font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
+
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="border-4 border-white">Narrow</td>
+                                        <td className="border-4 border-white">40% Target</td>
+                                        <td className="border-4 border-white">0.996</td>
+                                        <td className="border-4 border-white">1.004</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border-4 border-white">Mid</td>
+                                        <td className="border-4 border-white">100% Target</td>
+                                        <td className="border-4 border-white">0.99</td>
+                                        <td className="border-4 border-white">1.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border-4 border-white">Wide</td>
+                                        <td className="border-4 border-white">170% Target</td>
+                                        <td className="border-4 border-white">0.983</td>
+                                        <td className="border-4 border-white">1.017</td>
+                                    </tr>
+                                   
+
+                                </tbody>
+                            </table>
+                            <h2 className="text-3xl text-blue-700">StablePool - 10%</h2>
+                            <table className="table-auto border-4 border-blue-700 p-4 w-full mb-20 text-black text-center">
+                                <thead>
+                                <tr>
+                                        <th className="border-4 border-blue-700 font-bold text-base">BAND</th>
+                                        <th className="border-4 border-blue-700 font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base">
+                                        <div className="flex justify-center items-center border-blue-700">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-blue-700 font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
+
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                         <tr>
-                                            <th className="border-4">Band</th>
-                                            <th className="border-4">Range</th>
-                                            <th className="border-4">Lower</th>
-                                            <th className="border-4">Upper</th>
+                                            <td className="border-4 border-blue-700 ">Narrow</td>
+                                            <td className="border-4 border-blue-700 ">40% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.96</td>
+                                            <td className="border-4 border-blue-700 ">1.04</td>
                                         </tr>
-                                    </thead>
-                                    <tbody>
                                         <tr>
-                                            <td className="border-4">Narrow</td>
-                                            <td className="border-4">40% Target</td>
-                                            <td className="border-4">0.996</td>
-                                            <td className="border-4">1.004</td>
+                                            <td className="border-4 border-blue-700 ">Mid</td>
+                                            <td className="border-4 border-blue-700 ">100% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.9</td>
+                                            <td className="border-4 border-blue-700 ">1.1</td>
                                         </tr>
                                         <tr>
-                                            <td className="border-4">Mid</td>
-                                            <td className="border-4">100% Target</td>
-                                            <td className="border-4">0.99</td>
-                                            <td className="border-4">1.01</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="border-4">Wide</td>
-                                            <td className="border-4">170% Target</td>
-                                            <td className="border-4">0.983</td>
-                                            <td className="border-4">1.017</td>
+                                            <td className="border-4 border-blue-700 ">Wide</td>
+                                            <td className="border-4 border-blue-700 ">170% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.83</td>
+                                            <td className="border-4 border-blue-700 ">1.17</td>
                                         </tr>
 
                                     </tbody>
-                                </table>
-                                <h2 className="text-3xl text-blue-700">Blue-Chip - 10%</h2>
-                                <table className="table-auto border-4 border-blue-700 p-4 w-full mb-20 text-black text-center">
-                                    <thead>
-                                        <tr>
-                                            <th className="border-4 border-blue-700">Band</th>
-                                            <th className="border-4 border-blue-700">Range</th>
-                                            <th className="border-4 border-blue-700">Lower</th>
-                                            <th className="border-4 border-blue-700">Upper</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td className="border-4 border-blue-700">Narrow</td>
-                                            <td className="border-4 border-blue-700">40% Target</td>
-                                            <td className="border-4 border-blue-700">0.96</td>
-                                            <td className="border-4 border-blue-700">1.04</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="border-4 border-blue-700">Mid</td>
-                                            <td className="border-4 border-blue-700">100% Target</td>
-                                            <td className="border-4 border-blue-700">0.9</td>
-                                            <td className="border-4 border-blue-700">1.1</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="border-4 border-blue-700">Wide</td>
-                                            <td className="border-4 border-blue-700">170% Target</td>
-                                            <td className="border-4 border-blue-700">0.83</td>
-                                            <td className="border-4 border-blue-700">1.17</td>
-                                        </tr>
+                            </table>
+                            <h2 className="text-3xl text-black">StablePool - 50%</h2>
+                            <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
+                                <thead>
+                                  <tr>
+                                        <th className="border-4 border-black font-bold text-base">BAND</th>
+                                        <th className="border-4 border-black font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base border-black border-4">
+                                        <div className="flex justify-center items-center">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-black font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
 
-                                    </tbody>
-                                </table>
-                                <h2 className="text-3xl text-black">Small-Cap - 50%</h2>
-                                <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
-                                    <thead>
-                                        <tr>
-                                            <th className="border-4 border-black">Band</th>
-                                            <th className="border-4 border-black">Range</th>
-                                            <th className="border-4 border-black">Lower</th>
-                                            <th className="border-4 border-black">Upper</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                         <tr>
                                             <td className="border-4 border-black">Narrow</td>
                                             <td className="border-4 border-black">40% Target</td>
@@ -284,7 +321,7 @@ export default function Sections() {
                                         </tr>
 
                                     </tbody>
-                                </table>
+                            </table>
 
                             </div>
                             <div className="w-full px-4">
@@ -304,8 +341,8 @@ export default function Sections() {
 
                                 </div>
                             </div>
-                            <Image src="/img/section-six.svg" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden" />
+                            <Image src="/img/user-claim.png" width={400} height={400} alt=""
+                                className="w-full  h-[400px] block md:hidden" />
                             <div className="w-full px-4">
                                 {/* Earn Rewards with Subsidies */}
                                 <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
@@ -324,7 +361,7 @@ export default function Sections() {
                                 </div>
                             </div>
                             <Image src="/img/section-seven.svg" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden" />
+                                className="w-full  h-[400px] block md:hidden" />
                             <div className="w-full px-4">
                                 {/* Withdrawing */}
                                 <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
@@ -341,141 +378,156 @@ export default function Sections() {
                                     </p>
 
                                     <Image src="/img/user.jpg" width={248} height={248} alt="user"
-                                        className="my-10 hidden lg:block" />
+                                        className="my-10 hidden md:block" />
 
                                 </div>
 
                             </div>
                             <Image src="/img/section-eight.svg" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden" />
+                                className="w-full h-[400px] block md:hidden" />
                             <Image src="/img/weweswap.png" width={400} height={400} alt=""
-                                className="w-full object-cover h-[400px] block lg:hidden p-4" />
+                                className="w-full  h-[400px] block md:hidden p-4" />
                             <Image src="/img/user.jpg" width={248} height={248} alt="user"
-                                className="my-10 mx-auto lg:hidden block" />
+                                className="my-10 mx-auto md:hidden block" />
 
 
                         </div>
                       
-                        <div className="md:w-[50%] w-full relative p-10 lg:p-0 lg:block hidden">
+                        <div className="lg:w-[50%] w-full relative p-10 lg:p-0 md:block hidden">
                             <div className="line-left lg:block hidden"></div>
 
-                            <Image src="/img/elements-all.svg" width={500} height={16000} className="object-cover w-full h-[1600px] md:block hidden" alt="" />
+                            <Image src="/img/right-side-el.png" width={600} height={16000} className=" md:block hidden" alt="" />
                             <h2 className="text-3xl mt-[10%]">StablePool - 1%</h2>
-                            <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
+                            <table className="table-auto border-4 border-white p-4 w-full mb-20 text-black text-center">
                                 <thead>
                                     <tr>
-                                        <th className="border-4">Band</th>
-                                        <th className="border-4">Range</th>
-                                        <th className="border-4">Lower</th>
-                                        <th className="border-4">Upper</th>
+                                        <th className="border-4 border-white font-bold text-base">BAND</th>
+                                        <th className="border-4 border-white font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base">
+                                        <div className="flex justify-center items-center">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-white font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
+
+                                            </div>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td className="border-4">Narrow</td>
-                                        <td className="border-4">40% Target</td>
-                                        <td className="border-4">0.996</td>
-                                        <td className="border-4">1.004</td>
+                                        <td className="border-4 border-white">Narrow</td>
+                                        <td className="border-4 border-white">40% Target</td>
+                                        <td className="border-4 border-white">0.996</td>
+                                        <td className="border-4 border-white">1.004</td>
                                     </tr>
                                     <tr>
-                                        <td className="border-4">Narrow</td>
-                                        <td className="border-4">40% Target</td>
-                                        <td className="border-4">0.996</td>
-                                        <td className="border-4">1.004</td>
+                                        <td className="border-4 border-white">Mid</td>
+                                        <td className="border-4 border-white">100% Target</td>
+                                        <td className="border-4 border-white">0.99</td>
+                                        <td className="border-4 border-white">1.01</td>
                                     </tr>
                                     <tr>
-                                        <td className="border-4">Narrow</td>
-                                        <td className="border-4">40% Target</td>
-                                        <td className="border-4">0.996</td>
-                                        <td className="border-4">1.004</td>
+                                        <td className="border-4 border-white">Wide</td>
+                                        <td className="border-4 border-white">170% Target</td>
+                                        <td className="border-4 border-white">0.983</td>
+                                        <td className="border-4 border-white">1.017</td>
                                     </tr>
-                                    <tr>
-                                        <td className="border-4">Narrow</td>
-                                        <td className="border-4">40% Target</td>
-                                        <td className="border-4">0.996</td>
-                                        <td className="border-4">1.004</td>
-                                    </tr>
+                                   
 
                                 </tbody>
                             </table>
-                            <h2 className="text-3xl text-blue-700">StablePool - 1%</h2>
+                            <h2 className="text-3xl text-blue-700">StablePool - 10%</h2>
                             <table className="table-auto border-4 border-blue-700 p-4 w-full mb-20 text-black text-center">
                                 <thead>
-                                    <tr>
-                                        <th className="border-4 border-blue-700">Band</th>
-                                        <th className="border-4 border-blue-700">Range</th>
-                                        <th className="border-4 border-blue-700">Lower</th>
-                                        <th className="border-4 border-blue-700">Upper</th>
+                                <tr>
+                                        <th className="border-4 border-blue-700 font-bold text-base">BAND</th>
+                                        <th className="border-4 border-blue-700 font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base">
+                                        <div className="flex justify-center items-center border-blue-700">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-blue-700 font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
+
+                                            </div>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td className="border-4 border-blue-700">Narrow</td>
-                                        <td className="border-4 border-blue-700">40% Target</td>
-                                        <td className="border-4 border-blue-700">0.996</td>
-                                        <td className="border-4 border-blue-700">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-blue-700">Narrow</td>
-                                        <td className="border-4 border-blue-700">40% Target</td>
-                                        <td className="border-4 border-blue-700">0.996</td>
-                                        <td className="border-4 border-blue-700">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-blue-700">Narrow</td>
-                                        <td className="border-4 border-blue-700">40% Target</td>
-                                        <td className="border-4 border-blue-700">0.996</td>
-                                        <td className="border-4 border-blue-700">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-blue-700">Narrow</td>
-                                        <td className="border-4 border-blue-700">40% Target</td>
-                                        <td className="border-4 border-blue-700">0.996</td>
-                                        <td className="border-4 border-blue-700">1.004</td>
-                                    </tr>
+                                        <tr>
+                                            <td className="border-4 border-blue-700 ">Narrow</td>
+                                            <td className="border-4 border-blue-700 ">40% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.96</td>
+                                            <td className="border-4 border-blue-700 ">1.04</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-4 border-blue-700 ">Mid</td>
+                                            <td className="border-4 border-blue-700 ">100% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.9</td>
+                                            <td className="border-4 border-blue-700 ">1.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-4 border-blue-700 ">Wide</td>
+                                            <td className="border-4 border-blue-700 ">170% Target</td>
+                                            <td className="border-4 border-blue-700 ">0.83</td>
+                                            <td className="border-4 border-blue-700 ">1.17</td>
+                                        </tr>
 
-                                </tbody>
+                                    </tbody>
                             </table>
-                            <h2 className="text-3xl text-black">StablePool - 1%</h2>
+                            <h2 className="text-3xl text-black">StablePool - 50%</h2>
                             <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
                                 <thead>
-                                    <tr>
-                                        <th className="border-4 border-black">Band</th>
-                                        <th className="border-4 border-black">Range</th>
-                                        <th className="border-4 border-black">Lower</th>
-                                        <th className="border-4 border-black">Upper</th>
+                                  <tr>
+                                        <th className="border-4 border-black font-bold text-base">BAND</th>
+                                        <th className="border-4 border-black font-bold text-base">RANGE</th>
+                                        <th className="font-bold text-base border-black border-4">
+                                        <div className="flex justify-center items-center">
+                                          <span>LOWER</span>  
+                                            <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1 rotate-180" />
+                                            </div>
+                                        </th>
+                                        <th className="border-4 border-black font-bold text-base ">
+                                            <div className="flex justify-center items-center">
+                                        <span>UPPER</span>  
+                                        <Image src="/img/arrow.svg" width={10} height={10} alt="" className="mx-1" />
+
+                                            </div>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td className="border-4 border-black">Narrow</td>
-                                        <td className="border-4 border-black">40% Target</td>
-                                        <td className="border-4 border-black">0.996</td>
-                                        <td className="border-4 border-black">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-black">Narrow</td>
-                                        <td className="border-4 border-black">40% Target</td>
-                                        <td className="border-4 border-black">0.996</td>
-                                        <td className="border-4 border-black">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-black">Narrow</td>
-                                        <td className="border-4 border-black">40% Target</td>
-                                        <td className="border-4 border-black">0.996</td>
-                                        <td className="border-4 border-black">1.004</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-4 border-black">Narrow</td>
-                                        <td className="border-4 border-black">40% Target</td>
-                                        <td className="border-4 border-black">0.996</td>
-                                        <td className="border-4 border-black">1.004</td>
-                                    </tr>
+                                        <tr>
+                                            <td className="border-4 border-black">Narrow</td>
+                                            <td className="border-4 border-black">40% Target</td>
+                                            <td className="border-4 border-black">0.8</td>
+                                            <td className="border-4 border-black">1.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-4 border-black">Mid</td>
+                                            <td className="border-4 border-black">100% Target</td>
+                                            <td className="border-4 border-black">0.5</td>
+                                            <td className="border-4 border-black">1.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-4 border-black">Wide</td>
+                                            <td className="border-4 border-black">170% Target</td>
+                                            <td className="border-4 border-black">0.3</td>
+                                            <td className="border-4 border-black">1.7</td>
+                                        </tr>
 
-                                </tbody>
+                                    </tbody>
                             </table>
-                            <Image src="/img/el-all-2.svg" width={500} height={16000} className="object-cover w-full h-[auto] mt-[30%] md:block hidden" alt="" />
-                            <Image src="/img/el-all-2.svg" width={500} height={1000} className="object-cover w-full h-[1200px] mt-[30%] md:block hidden" alt="" />
+                            <Image src="/img/el-all-2.png" width={500} height={16000} className="object-cover w-full h-[auto] mt-[30%] md:block hidden" alt="" />                            
 
 
                         </div>

@@ -7,6 +7,7 @@
   url('/fonts/VCR_OSD_MONO_1.001 2.woff') format('woff'),
   url('/fonts/VCR_OSD_MONO_1.001 2.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Verdana';
   src: url('/fonts/Verdana.ttf') format('ttf'),
@@ -24,6 +25,14 @@ p{
   line-height: 20px;
   font-family: 'Verdana' !important;
 }
+table td{
+  font-family: 'Verdana' !important;
+}
+.font-verdana{
+  font-family: 'Verdana' !important;
+
+}
+
 ul li{
 font-family: 'Verdana' !important;
 }
@@ -45,7 +54,7 @@ font-family: 'Verdana' !important;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
   body{
     background-image: none !important;
     background-color:#176453 !important;
