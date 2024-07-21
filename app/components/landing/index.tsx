@@ -7,13 +7,13 @@ export default function Sections() {
         <>
             <section className="header-custom" >
                 <div className="max-w-screen-xl mx-auto" >
-                    <div className="w-full text-center lg:mt-20 lg:text-left h-[450px] flex justify-center items-center flex-col p-4">
-                        <h1 className="text-8xl">
+                    <div className="w-full text-center lg:mt-20 lg:text-left lg:h-[450px] h-[100vh] flex justify-center items-center flex-col lg:p-4">
+                        <h1 className="lg:text-8xl text-5xl text-center">
                             WEWE LOVE <br /> THE YIELDS
                         </h1>
-                        <p className="text-4xl mt-2">Together We Earn</p>
+                        <p className="lg:text-4xl text-xl mt-2">Together We Earn</p>
                     </div>
-                    <div className="lg:h-[500px] h-[300px]"></div>
+                    <div className="lg:h-[500px] h-[0px]"></div>
                     <div className="flex w-full md:flex-nowrap flex-wrap" >
                     <Image src="/img/section-one.svg" width={400} height={400} alt="" 
                     className="w-full object-cover h-[400px] block md:hidden" />
@@ -41,8 +41,8 @@ export default function Sections() {
                                 </div>
                             </div>
                             <Image src="/img/section-two.svg" width={400} height={400} alt=""
-                                className="w-full h-[400px] block md:hidden" />
-                            <div className="w-full px-4">
+                                className="w-full h-[400px] block md:hidden object-cover bg-[#33e6bf]" />
+                            <div className="w-full px-4 mt-20">
                                 {/* problems */}
                                 <div className="lg:w-[70%] w-full" id="problems">
 
@@ -53,7 +53,7 @@ export default function Sections() {
                                     <p className="my-5">
                                         The introduction of UniV3 and UniV4 aimed to improve capital efficiency by concentrating liquidity. However, this shift also brought increased complexity in user experience (UX). Key changes included:
                                     </p>
-                                    <ul className="list-disc">
+                                    <ul className="list-disc ml-3">
                                         <li className="mt-10">Price Ranges: Users had to select specific price ranges for their liquidity.</li>
                                         <li className="mt-10">NFT Positions: Liquidity positions were represented as non-fungible tokens (NFTs), adding a layer of abstraction.</li>
                                         <li className="mt-10">Yield Accrual: Yield accrued outside the pool, allowing users to claim fees in both tokens, which was an improvement. However, the need for active management deterred retail users, pushing them back to the simpler, albeit less efficient, CP pools typically used for memecoins.</li>
@@ -62,8 +62,8 @@ export default function Sections() {
                                 </div>
                             </div>
                             <Image src="/img/section-three.svg" width={400} height={400} alt=""
-                                className="w-full h-[400px] block md:hidden" />
-                            <div className="w-full px-4">
+                                className="w-full h-[400px] block md:hidden object-cover" />
+                            <div className="w-full px-4 mt-20">
 
                                 {/* Solution */}
                                 <div className="lg:w-[70%] w-full" id="problems">
@@ -72,31 +72,31 @@ export default function Sections() {
                                     <p className="my-5">
                                         {`To address the complexities and inefficiencies of traditional AMM designs, WEWESWAP introduces a streamlined, user-friendly approach. Our solution focuses on making the process easy, intuitive, and rewarding for all users.`}
                                     </p>
-                                    <p className="my-5 border-4 p-5 rounded-lg">
+                                    <p className="my-5 border-4 p-3 rounded-lg text-sm lg:text-base whitespace-nowrap">
                                         {`   1. Easy Pool Entry with One Asset (ZAP) `}
                                     </p>
                                     <p>
                                         Users can effortlessly enter a pool using just one asset, thanks to our ZAP functionality. This eliminates the need for multiple assets and simplifies the onboarding process.
                                     </p>
-                                    <p className="my-5 border-4 p-5 rounded-lg">
+                                    <p className="my-5 border-4 p-3 rounded-lg text-sm lg:text-base whitespace-nowrap">
                                         {`2. Simple Pool Selection`}
                                     </p>
                                     <p>
                                         We offer a straightforward selection of pools to prevent decision paralysis. Users can easily choose the best option without being overwhelmed by too many choices.
                                     </p>
-                                    <p className="my-5 border-4 p-5 rounded-lg">
+                                    <p className="my-5 border-4 p-3 rounded-lg text-sm lg:text-base whitespace-nowrap">
                                         {`3. Yield Accrued Outside the Pools`}
                                     </p>
                                     <p>
                                         To protect against impermanent loss, all yield is accrued outside the pools. This ensures that users' earnings are secure and not subject to fluctuations within the pool.
                                     </p>
-                                    <p className="my-5 border-4 p-5 rounded-lg">
+                                    <p className="my-5 border-4 p-3 rounded-lg text-sm lg:text-base whitespace-nowrap">
                                         {`4. Consistent Yield in USDC`}
                                     </p>
                                     <p>
                                         Yield is always paid in USDC, providing users with a stable and reliable return. This "cash back" approach offers the assurance of stablecoin rewards.
                                     </p>
-                                    <p className="my-5 border-4 p-5 rounded-lg">
+                                    <p className="my-5 border-4 p-2 whitespace-nowrap rounded-lg text-sm lg:text-base">
                                         {`5. Auto-Rebalancing for Passive Management`}
                                     </p>
                                     <p>
@@ -104,26 +104,26 @@ export default function Sections() {
                                     </p>
                                 </div>
                                 {/* Pool Types */}
-                                <div className="lg:w-[70%] w-full mt-36" id="problems">
+                                <div className="lg:w-[70%] w-full lg:mt-36 mt-20" id="problems">
                                     <h4 className="text-4xl">Pool Types</h4>
 
-                                    <p className="my-5 border-4 p-5 text-white rounded-lg  border-white">
+                                    <p className="my-5 border-4 p-3 text-white rounded-lg  border-white">
                                         {`“STABLE”:`} <br />
                                         {`eg {USDT}-USDC  // +/- 1% range; 5bps`}
                                     </p>
-                                    <p className="my-5 border-4 p-5 text-white rounded-lg  border-blue-700">
+                                    <p className="my-5 border-4 p-3 text-white rounded-lg  border-blue-700">
 
                                         {`“BLUE-CHIP”:`} <br />
                                         {` eg {WETH}-USDC // +/- 10% range; 30bps`}
                                     </p>
-                                    <p className="my-5 border-4 p-5 text-white rounded-lg  border-black">
+                                    <p className="my-5 border-4 p-3 text-white rounded-lg  border-black">
 
                                         {`“SMALL-CAP”:`} <br /> 
                                         {` eg {WEWE}-USDC // +/- 50% range; 100bps`}
                                     </p>
                                 </div>
                                 {/*  Simplified LP Ownership */}
-                                <div className="lg:w-[70%] w-full  mt-36" id="WAMMv1">
+                                <div className="lg:w-[70%] w-full  lg:mt-36 mt-20" id="WAMMv1">
                                     <h4 className="text-4xl">Simplified LP Ownership</h4>
                                     <p className="my-5">
                                         {`Simply add your assets into a pool through our Liquidity Manager contract (yay). Your assets are automatically split into three bands: Narrow, Mid, and Wide, to ensure effective liquidity.`}
@@ -144,9 +144,9 @@ export default function Sections() {
                             </div>
                             <Image src="/img/section-four.svg" width={400} height={600} alt=""
                                 className="w-full  h-[600px] block md:hidden" />
-                            <div className="w-full px-4">
+                            <div className="w-full px-4 mt-20">
                                 {/* Liquidity Bands */}
-                                <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
+                                <div className="lg:w-[70%] w-full  lg:mt-60" id="WAMMv1">
                                     <h4 className="text-4xl">Liquidity Bands</h4>
                                     <p className="my-5">
                                         {`There are 3 bands in each pool. The target price range is as per the Pool Type. The LM contract stores the desired band targets (but allows owner to update the strategy if required).`}
@@ -155,7 +155,7 @@ export default function Sections() {
                                         {`When the re-balancer moves the band, it will fetch the latest desired band + fee strategy from LM Owner and re-deploy liquidity as per the params.`}
                                     </p>
 
-                                    <div className="border-4 border-white rounded-lg w-full p-4">
+                                    <div className="border-4 border-white rounded-lg w-full p-[10px]">
                                         <h3 className="text-2xl">Stable</h3>
                                         <div className="flex justify-between items-center">
                                             <span className="font-verdana">Target Price Range</span>
@@ -166,7 +166,7 @@ export default function Sections() {
                                             <span className="font-verdana font-bold">5BPS</span>
                                         </div>
                                     </div>
-                                    <div className="border-4 border-blue-700 rounded-lg w-full p-4 my-4">
+                                    <div className="border-4 border-blue-700 rounded-lg w-full p-[10px] my-4">
                                         <h3 className="text-2xl">Blue-Chip</h3>
                                         <div className="flex justify-between items-center">
                                             <span className="font-verdana">Target Price Range</span>
@@ -177,7 +177,7 @@ export default function Sections() {
                                             <span className="font-verdana font-bold">30BPS</span>
                                         </div>
                                     </div>
-                                    <div className="border-4 border-black rounded-lg w-full p-4">
+                                    <div className="border-4 border-black rounded-lg w-full p-[10px]">
                                         <h3 className="text-2xl">Small-Cap</h3>
                                         <div className="flex justify-between items-center">
                                             <span className="font-verdana">Target Price Range</span>
@@ -236,7 +236,7 @@ export default function Sections() {
 
                                 </tbody>
                             </table>
-                            <h2 className="text-3xl text-blue-700">StablePool - 10%</h2>
+                                <h2 className="text-3xl text-blue-700">Blue-Chip - 10%</h2>
                             <table className="table-auto border-4 border-blue-700 p-4 w-full mb-20 text-black text-center">
                                 <thead>
                                 <tr>
@@ -279,7 +279,7 @@ export default function Sections() {
 
                                     </tbody>
                             </table>
-                            <h2 className="text-3xl text-black">StablePool - 50%</h2>
+                                <h2 className="text-3xl text-black">Small-Cap - 50%</h2>
                             <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
                                 <thead>
                                   <tr>
@@ -324,9 +324,9 @@ export default function Sections() {
                             </table>
 
                             </div>
-                            <div className="w-full px-4">
+                            <div className="w-full px-4 mt-20">
                                 {/*  Earn Yield with WEWESWAP */}
-                                <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
+                                <div className="lg:w-[70%] w-full  lg:mt-44" id="WAMMv1">
                                     <h4 className="text-4xl">Earn Yield with WEWESWAP</h4>
                                     <p className="my-5">
                                         {`All fees earned from the pool are converted to USDC (yay!). `}
@@ -343,7 +343,7 @@ export default function Sections() {
                             </div>
                             <Image src="/img/user-claim.png" width={400} height={400} alt=""
                                 className="w-full  h-[400px] block md:hidden" />
-                            <div className="w-full px-4">
+                            <div className="w-full px-4 mt-20">
                                 {/* Earn Rewards with Subsidies */}
                                 <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
                                     <h4 className="text-4xl">Earn Rewards with Subsidies</h4>
@@ -362,9 +362,9 @@ export default function Sections() {
                             </div>
                             <Image src="/img/section-seven.svg" width={400} height={400} alt=""
                                 className="w-full  h-[400px] block md:hidden" />
-                            <div className="w-full px-4">
+                            <div className="w-full px-4 mt-20">
                                 {/* Withdrawing */}
-                                <div className="lg:w-[70%] w-full  lg:mt-36" id="WAMMv1">
+                                <div className="lg:w-[70%] w-full  lg:mt-20" id="WAMMv1">
                                     <h4 className="text-4xl">Withdrawing</h4>
                                     <p className="my-5">
                                         {`You can withdraw your position anytime by checking your ownership units. `}
@@ -378,7 +378,7 @@ export default function Sections() {
                                     </p>
 
                                     <Image src="/img/user.jpg" width={248} height={248} alt="user"
-                                        className="my-10 hidden md:block" />
+                                        className="my-10 hidden md:block mt-40" />
 
                                 </div>
 
@@ -396,7 +396,7 @@ export default function Sections() {
                         <div className="lg:w-[50%] w-full relative p-10 lg:p-0 md:block hidden">
                             <div className="line-left lg:block hidden"></div>
 
-                            <Image src="/img/right-side-el.png" width={600} height={16000} className=" md:block hidden" alt="" />
+                            <Image src="/img/right-side-el.png" width={600} height={3850} className="h-[3850px] md:block hidden" alt="" />
                             <h2 className="text-3xl mt-[10%]">StablePool - 1%</h2>
                             <table className="table-auto border-4 border-white p-4 w-full mb-20 text-black text-center">
                                 <thead>
@@ -441,7 +441,7 @@ export default function Sections() {
 
                                 </tbody>
                             </table>
-                            <h2 className="text-3xl text-blue-700">StablePool - 10%</h2>
+                            <h2 className="text-3xl text-blue-700">Blue-Chip - 10%</h2>
                             <table className="table-auto border-4 border-blue-700 p-4 w-full mb-20 text-black text-center">
                                 <thead>
                                 <tr>
@@ -484,7 +484,7 @@ export default function Sections() {
 
                                     </tbody>
                             </table>
-                            <h2 className="text-3xl text-black">StablePool - 50%</h2>
+                            <h2 className="text-3xl text-black">Small-Cap - 50%</h2>
                             <table className="table-auto border-4 p-4 w-full mb-20 text-black text-center">
                                 <thead>
                                   <tr>
@@ -527,7 +527,8 @@ export default function Sections() {
 
                                     </tbody>
                             </table>
-                            <Image src="/img/el-all-2.png" width={500} height={16000} className="object-cover w-full h-[auto] mt-[30%] md:block hidden" alt="" />                            
+                            <Image src="/img/el-all-2.png" width={500} height={16000} 
+                            className="object-cover w-full h-[auto]  md:block hidden" alt="" />                            
 
 
                         </div>

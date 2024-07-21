@@ -17,10 +17,10 @@
 body {
   color:#FFF;
   overflow-x: hidden;
-  background: url(../public/img/bg-sec.jpg) center top no-repeat ;
-   background-size: cover;
+  background: url(../public/img/bg-body.jpg) center -250px repeat-y !important; /* Adjust -50px to your desired negative value */
    font-family: 'VCR_OSD_MONO' !important;
 }
+
 p{
   line-height: 20px;
   font-family: 'Verdana' !important;
