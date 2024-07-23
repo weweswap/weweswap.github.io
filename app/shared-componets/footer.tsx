@@ -12,13 +12,13 @@ export default function Footer() {
                 </div>
             }
             <div className="w-full flex justify-center items-center my-20">
-                <Link href="#">
+                <Link href="https://x.com/weweswap">
                     <Image src="/img/x.png" className="mx-2" width={30} height={30} alt="" />
                 </Link>
-                <Link href="#">
+                <Link href="https://github.com/weweswap">
                     <Image src="/img/github.png" className="mx-2" width={38} height={38} alt="" />
                 </Link>
-                <Link href="#">
+                <Link href="https://discord.com/invite/cV95JF7kGM">
                     <Image src="/img/discord.png" className="mx-2" width={38} height={38} alt="" />
                 </Link>
 
