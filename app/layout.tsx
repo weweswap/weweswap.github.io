@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.scss";
-import Header from "./shared-componets/header";
-import Footer from "./shared-componets/footer";
+import Header from "./share-components/header";
+import Footer from "./share-components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 export const metadata: Metadata = {
   title: "WEWE - Together We Earn",
@@ -32,6 +31,7 @@ export const metadata: Metadata = {
     icon: "fav.jpg"
   }
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{

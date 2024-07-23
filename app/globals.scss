@@ -1,68 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
-    font-family: 'VCR_OSD_MONO';
-    src: url('/fonts/VCR_OSD_MONO_1.001-1.ttf') format('ttf'),
-        url('/fonts/VCR_OSD_MONO_1.001 2.woff') format('woff'),
-        url('/fonts/VCR_OSD_MONO_1.001 2.woff2') format('woff2');
+  font-family: 'VCR_OSD_MONO';
+  src: url('/fonts/VCR_OSD_MONO_1.001-1.ttf') format('ttf'),
+  url('/fonts/VCR_OSD_MONO_1.001 2.woff') format('woff'),
+  url('/fonts/VCR_OSD_MONO_1.001 2.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Verdana';
-    src: url('/fonts/Verdana.ttf') format('ttf'),
-        url('/fonts/verdanab.eot') format('eot'),
-        url('/fonts/Verdana.woff') format('woff');
+  font-family: 'Verdana';
+  src: url('/fonts/Verdana.ttf') format('ttf'),
+  url('/fonts/verdanab.eot') format('eot'),
+  url('/fonts/Verdana.woff') format('woff');
 }
-
-@font-face {
-    font-family: 'Dogica';
-    src: url('/fonts/Dogica.ttf') format('ttf'),
-        url('/fonts/Dogica.woff') format('woff'),
-        url('/fonts/Dogica.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Dogica Bold';
-    src: url('/fonts/Dogica Bold.ttf') format('ttf'),
-        url('/fonts/Dogica Bold.woff') format('woff'),
-        url('/fonts/Dogica Bold.woff2') format('woff2');
-}
-
-$color-liberty : #5A5CAF;
-$color-dandelion: #FFD911;
-$color-turquoise: #33E6BF;
-$color-persian-blue: #0439C7;
-
-
 body {
-    color: #FFF;
-    overflow-x: hidden;
-    background: url(../public/img/bg-pattern.png) #000 center top repeat-y !important;
-    font-family: 'Dogica' !important;
+  color:#FFF;
+  overflow-x: hidden;
+  background: url(../public/img/bg-body.jpg) center -250px repeat-y !important; /* Adjust -50px to your desired negative value */
+   font-family: 'VCR_OSD_MONO' !important;
 }
 
-.color-turquoise {
-    color: $color-turquoise;
+p{
+  line-height: 20px;
+  font-family: 'Verdana' !important;
+}
+table td{
+  font-family: 'Verdana' !important;
+}
+.font-verdana{
+  font-family: 'Verdana' !important;
+
 }
 
-.color-dandelion {
-    color: $color-dandelion;
+ul li{
+font-family: 'Verdana' !important;
 }
-
-.border-liberty {
-    border-color: $color-liberty;
+#right-bg{
+  background: url(../public/img/elements-all.svg) center top no-repeat ;
+  background-size: cover;
 }
-
-.border-persian-blue {
-    border-color: $color-persian-blue;
+.line-left{
+  background: url(../public/img/line-dots.png) top repeat-y ;
+  position: absolute;
+  left: -30px;
+  width: 15px;
+  height: 6200px;
 }
-
-.dogica-bold {
-    font-family: "Dogica Bold";
+.menu, ol, ul{
+  padding-left: 16px !important;
 }
-
-.font-verdana {
-    font-family: "Verdana";
+.px-4{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+@media (max-width: 767px){
+  body{
+    background-image: none !important;
+    background-color:#176453 !important;
+  }
 }
