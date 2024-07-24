@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.scss";
 import Header from "./shared-componets/header";
 import Footer from "./shared-componets/footer";
@@ -29,8 +29,19 @@ export const metadata: Metadata = {
     images: "https://weweswap.com/img/wewe-thumbnail.png"
   },
   icons: {
-    icon: "fav.jpg"
-  }
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: 'fav-light.svg',
+        href: 'fav-light.svg',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: 'fav-dark.svg',
+        href: 'fav-dark.svg',
+      },
+    ],
+  },
 };
 export default function RootLayout({
   children,
@@ -43,7 +54,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
