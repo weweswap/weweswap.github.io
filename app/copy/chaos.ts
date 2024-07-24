@@ -13,8 +13,8 @@ export const chaosCopy = {
                 title: "UNISWAP",
                 description: "Your positions (1)",
                 image: {
-                    src: "/img/et-1.jpg",
-                    alt:""
+                    src: "/img/et-1.svg",
+                    alt: ""
                 }
             },
             {
@@ -28,29 +28,24 @@ export const chaosCopy = {
                                     Max: 1,650.52 WETH per WEWE
                                 </p>`,
                 images: [
-                    { src: "/img/et-2.jpg", alt: "" },
-                    { src: "/img/et-3.jpg", alt: "" }
+                    { src: "/img/et-3.svg", alt: "" },
+                    { src: "/img/et-2.svg", alt: "" }
                 ],
-                btn:{
+                btn: {
                     title: 'Migrate',
-                    url:'#'
+                    url: '#'
                 },
             },
         ],
     },
     vampiring: {
         title: `<b class="text-[#FE0000]">VAMPIRING</b>  LIQUIDITY`,
-        description: ` <p>
-                        It’s not fun without MAX CHAOS!!!
-                    </p>
-                    <p class="my-6">
-                        Earn $CHAOS coins by migrating your liquidity from Uniswap to WEWESwap. 
-                    </p>
-                    <p>
-                        You liquidity will be moved into the Liquidity Manager Contract. You will begin earning $CHAOS Coins!
-
-                    </p>`,
-        image: "/img/image-earning.png"
+        description: `Click to migrate your LP from Uniswap to WEWESWAP now
+        <br><br>
+        Your liquidity will be moved to the liquidity manager contract and you will start earning $CHAOS immediately
+        <br><br>
+        The earlier you are, the more you earn`,
+        image: "/img/image-earning.svg"
 
     }
 }

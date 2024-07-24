@@ -31,21 +31,14 @@ export const earningsCopy = {
                 </p>`,
     Simplified: {
         title: `<b class="text-yellow">Simplified</b>  EARNINGS`,
-        description: ` <p class="text-base">
-                        All yield in the pool is converted into USDC and sent back to the Liquidity Manager Contract. A bot will convert the pool fees to USDC regularly your behalf.
-                    </p>
-                    <p class="my-10">
-
-                        At any time you can claim your USDC! It is out of the pool and never will be lost to pool volatility.
-                    </p>
-                    <p class="my-10">
-
-                        You can also “double down” by converting your USDC back into the pool again!
-                    </p>
-                    <p>
-                        So simple!
-                    </p>`,
-        image: "/img/image-earning.png"
+        description: `
+        All pool yield is converted to USDC 
+        <br><br>
+        It stays outside of the pool and will never be lost due to volatility
+        <br><br>
+        Claim anytime — Or double down by converting your USDC back into the pool again
+        `,
+        image: "/img/image-earning.svg"
 
     }
 }

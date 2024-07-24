@@ -14,7 +14,7 @@ export default function Header() {
             <nav className="mx-auto flex w-full items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5">
-                        <Image src="/img/logo.png" alt="" width={142} height={57} className="object-contain" />
+                        <Image src="/img/logo.svg" alt="" width={142} height={57} className="object-contain" />
                     </Link>
                 </div>
                 <div className="flex md:hidden">
