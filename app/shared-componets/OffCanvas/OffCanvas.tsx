@@ -72,8 +72,8 @@ export function Offcanvas({
         <>
             <div
                 id={`offcanvas_${randomId}`}
-                className={`${scss.offcanvas} ${scss[position]} ${isOpen ? scss.show : ''
-                    } ${className}  bg-neutral-900`}
+                className={`${scss.offcanvas} sm:w-[400px] w-full ${scss[position]} ${isOpen ? scss.show : ''
+                    } ${className}  bg-neutral-900 `}
                 tabIndex={-1}
                 style={styles}
                 role="dialog"
