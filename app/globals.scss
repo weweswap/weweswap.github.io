@@ -35,6 +35,9 @@ $color-dandelion: #FFD911;
 $color-turquoise: #33E6BF;
 $color-persian-blue: #0439C7;
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     color: #FFF;
@@ -45,6 +48,10 @@ body {
 
 .color-turquoise {
     color: $color-turquoise;
+}
+
+.bg-turquoise {
+    background: $color-turquoise;
 }
 
 .color-dandelion {
@@ -65,4 +72,16 @@ body {
 
 .font-verdana {
     font-family: "Verdana";
+}
+
+@media (max-width: 768px) {
+    .scrollToTopButton {
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .scrollToTopButton.visible {
+        opacity: 1;
+    }
 }
