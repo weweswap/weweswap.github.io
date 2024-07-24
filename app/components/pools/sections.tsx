@@ -30,7 +30,7 @@ export default function Sections() {
                     <Image src={poolsCopy.poolOwnerShip.image} alt={poolsCopy.poolOwnerShip.title} width={560} height={400}
                         className="w-full" />
                 </div>
-                <div className="text-white  lg:w-[90%] w-full p-5 font-verdana">
+                <div className="text-white  lg:w-[90%] w-full p-5 font-verdana" style={{ display:"flex",justifyContent:"center",alignItems:"center" }}>
                     <p dangerouslySetInnerHTML={{ __html: poolsCopy.poolOwnerShip.description }}></p>
                 </div>
             </div>
