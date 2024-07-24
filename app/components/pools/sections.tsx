@@ -1,4 +1,5 @@
 import { poolsCopy } from "@/app/copy/pools";
+import { headerCopy } from "@/app/copy/header";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,10 +20,7 @@ export default function Sections() {
                 ))}
             </div>
             <div className="w-full text-center mt-20">
-                <button className="md:w-[400px] md:text-2xl text-base w-[250px] mx-auto font-black dogica-bold bg-pink h-[30px] md:h-[38px] flex justify-center items-center text-black">
-                    {poolsCopy.header.cta.buttonText}
-                </button>
-
+            <a href={headerCopy.button.url} target={headerCopy.button.target} className="md:w-[400px] md:text-2xl text-base w-[250px] mx-auto font-black dogica-bold bg-pink h-[30px] md:h-[38px] flex justify-center items-center text-black">{poolsCopy.header.cta.buttonText}</a>
             </div>
 
             <h2 className="text-2xl text-white mt-10 text-center font-black dogica-bold" dangerouslySetInnerHTML={{ __html: poolsCopy.poolOwnerShip.title }}></h2>

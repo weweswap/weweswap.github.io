@@ -18,7 +18,7 @@ export const headerCopy = {
     ],
     button: {
         name: "LAUNCH",
-        url: "#",
+        url: "https://app-page-beta.vercel.app",
         target: "_blank"
     }
 }
