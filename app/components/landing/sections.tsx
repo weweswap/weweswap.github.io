@@ -15,7 +15,7 @@ export default function Sections() {
                 <IconBottomRightBorder />
             </div>
             <div className="w-full flex justify-center items-center mt-20 px-3">
-                <Image src="/img/footer-logo.png" width={600} height={95} alt="" />
+                <Image src="/img/footer-logo.svg" width={600} height={95} alt="" />
             </div>
 
             <div className="w-[90%] lg:w-max  border-4 border-liberty rounded-lg  mx-auto mt-20" style={{ padding: '5px' }}>
@@ -27,7 +27,7 @@ export default function Sections() {
             {/* Problem */}
             <div className="flex items-center justify-center mt-36 px-3" >
                 <h2 className="color-dandelion font-black dogica-bold lg:text-4xl text-2xl">{landingCopy.problemSection.title}</h2>
-                <Image className="lg:ms-5 h-[50px] w-[50px]" src={"/img/icon-sad-kirbys.png"} width={50} height={50} alt="Problem" />
+                <Image className="lg:ms-5 h-[50px] w-[50px]" src={"/img/icon-sad-kirbys.svg"} width={50} height={50} alt="Problem" />
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-20 my-10">
                 {landingCopy.problemSection.problems.map((item, index) => (
@@ -50,7 +50,7 @@ export default function Sections() {
 
             <div className="flex items-center justify-center mt-44">
                 <h2 className="color-turquoise font-black dogica-bold lg:text-4xl text-2xl">{landingCopy.solutionSection.title}</h2>
-                <Image className="lg:ms-5  h-[50px] w-[50px]" src={"/img/icon-happy-kirbys.png"} width={50} height={50} alt="Solution" />
+                <Image className="lg:ms-5  h-[50px] w-[50px]" src={"/img/icon-happy-kirbys.svg"} width={50} height={50} alt="Solution" />
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-24">
                 {landingCopy.solutionSection.solutions.map((item, index) => (
@@ -64,7 +64,7 @@ export default function Sections() {
             <div style={{ height: "100px" }}></div>
             <div className="mt-20 lg:w-max mx-auto">
                 <h2 className="lg:text-2xl text-xl leading-10 my-4" dangerouslySetInnerHTML={{ __html: landingCopy.footerNote }}></h2>
-                <Image className="ms-auto" src="/img/footer-vampire.png" width={300} height={80} alt="Vampire Attack" />
+                <Image className="ms-auto" src="/img/footer-vampire.svg" width={300} height={80} alt="Vampire Attack" />
             </div>
         </>
     )
