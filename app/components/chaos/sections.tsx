@@ -1,4 +1,5 @@
 import { chaosCopy } from "@/app/copy/chaos";
+import { headerCopy } from "@/app/copy/header";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,11 +11,8 @@ export default function Sections() {
             </div>
             <div className="container mx-auto">
                 <div className="w-full text-center mt-16">
-                    <button className="md:w-[400px] md:text-2xl text-base w-[250px] mx-auto font-black dogica-bold bg-pink h-[30px] md:h-[38px] flex justify-center items-center text-black">
-                        {chaosCopy.header.cta.buttonText}
-                    </button>
+                    <a href={headerCopy.button.url} target={headerCopy.button.target} className="md:w-[400px] md:text-2xl text-base w-[250px] mx-auto font-black dogica-bold bg-pink h-[30px] md:h-[38px] flex justify-center items-center text-black">{chaosCopy.header.cta.buttonText}</a>
                     <h2 className="text-3xl text-white mt-16" dangerouslySetInnerHTML={{ __html: chaosCopy.vampiring.title }}></h2>
-
                 </div>
                 <div className="md:w-[70%] w-[90%] mx-auto border-2 border-white p-10 my-20 ">
                     <div className="w-full flex flex-wrap lg:flex-nowrap justify-between">

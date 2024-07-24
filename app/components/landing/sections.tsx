@@ -1,6 +1,7 @@
 import { IconBottomRightBorder } from "@/app/assets/icons/BottomRightBorder";
 import { IconTopLeftBorder } from "@/app/assets/icons/TopLeftBorder";
 import { landingCopy } from "@/app/copy/landing";
+import { headerCopy } from "@/app/copy/header";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ export default function Sections() {
 
             <div className="w-[90%] lg:w-max  border-4 border-liberty rounded-lg  mx-auto mt-20" style={{ padding: '5px' }}>
                 <div className="bg-pink lg:w-max w-full lg:px-10 px-3 py-3 ">
-                    <a href="#" className="font-black dogica-bold lg:text-3xl text-black " dangerouslySetInnerHTML={{ __html: landingCopy.cta.buttonText }}></a>
+                    <a href={headerCopy.button.url} className="font-black dogica-bold lg:text-3xl text-black " dangerouslySetInnerHTML={{ __html: landingCopy.cta.buttonText }}></a>
                 </div>
             </div>
 

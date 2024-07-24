@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { footerCopy } from "@/app/copy/footer";
+
 export default function Footer() {
     const pathName = usePathname()
     return (
@@ -12,15 +14,12 @@ export default function Footer() {
                 </div>
             }
             <div className="w-full flex justify-center items-center my-20">
-                <Link href="https://x.com/weweswap">
-                    <Image src="/img/x.png" className="mx-2" width={30} height={30} alt="" />
-                </Link>
-                <Link href="https://github.com/weweswap">
-                    <Image src="/img/github.png" className="mx-2" width={38} height={38} alt="" />
-                </Link>
-                <Link href="https://discord.com/invite/cV95JF7kGM">
-                    <Image src="/img/discord.png" className="mx-2" width={38} height={38} alt="" />
-                </Link>
+                {footerCopy.socials.map((footer, index) => (
+
+                    <Link href={footer.href}>
+                        <Image src={footer.image} height={30} width={30} className="mx-2" alt="" />
+                    </Link>
+                ))}
 
             </div>
 
