@@ -17,7 +17,7 @@ export default function Footer() {
                 {footerCopy.socials.map((footer, index) => (
 
                     <Link href={footer.href}>
-                        <Image src={footer.image} className="mx-2" alt="" />
+                        <Image src={footer.image} height={30} width={30} className="mx-2" alt="" />
                     </Link>
                 ))}
 
