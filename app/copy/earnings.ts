@@ -11,7 +11,7 @@ export const earningsCopy = {
                 description: "234.54 USDC",
                 btn: {
                     title: "Claim",
-                    url: "#"
+                    url: "https://app-page-beta.vercel.app"
                 },
             },
         ],

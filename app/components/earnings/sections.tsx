@@ -13,7 +13,7 @@ export default function Sections() {
 
             </div>
 
-            <div className="lg:w-[590px]  w-[90%] mx-auto border border-white p-4 m-10">
+            <div className="lg:w-[590px]  w-[90%] mx-auto border border-white p-3 m-10 bg-black">
                 <p className="text-sm pb-5 border-b border-blue mb-5">
                     {earningsCopy.header.card[0].title}: {earningsCopy.header.card[0].description}</p>
                 <div className="flex justify-between items-center">

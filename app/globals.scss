@@ -75,7 +75,12 @@ body {
 .font-verdana {
     font-family: "Verdana";
 }
-
+.bg-black{
+    background-color: #000;
+}
+.bg-gray{
+    background-color: rgb(17 24 39);
+}
 @media (max-width: 768px) {
     .scrollToTopButton {
         cursor: pointer;
