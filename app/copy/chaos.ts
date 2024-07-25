@@ -33,7 +33,7 @@ export const chaosCopy = {
                 ],
                 btn: {
                     title: 'Migrate',
-                    url: '#'
+                    url: 'https://app-page-beta.vercel.app'
                 },
             },
         ],
