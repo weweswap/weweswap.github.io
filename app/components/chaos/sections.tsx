@@ -14,7 +14,7 @@ export default function Sections() {
                     <a href={headerCopy.button.url} target={headerCopy.button.target} className="md:w-[400px] md:text-2xl text-base w-[250px] mx-auto font-black dogica-bold bg-pink h-[30px] md:h-[38px] flex justify-center items-center text-black">{chaosCopy.header.cta.buttonText}</a>
                     <h2 className="text-3xl text-white mt-16" dangerouslySetInnerHTML={{ __html: chaosCopy.vampiring.title }}></h2>
                 </div>
-                <div className="md:w-[70%] w-[90%] mx-auto border-2 border-white p-10 my-20 ">
+                <div className="md:w-[70%] w-[90%] mx-auto border-2 border-white p-4 my-20 bg-black">
                     <div className="w-full flex flex-wrap lg:flex-nowrap justify-between">
                         <div className="flex">
                             <Image
@@ -44,7 +44,7 @@ export default function Sections() {
 
                         </div>
                         <Link href={chaosCopy.body.card[1].btn ? chaosCopy.body.card[1].btn.url : '#'}
-                            className="w-[190px] bg-blue h-[45px] flex justify-center items-center font-black dogica-bold mt-3 lg:mt-0">
+                            className="w-[190px] bg-blue h-[45px] flex justify-center items-center font-black dogica-bold mt-5 lg:mt-10">
                             {chaosCopy.body.card[1].btn?.title}
                         </Link>
                     </div>
