@@ -15,8 +15,8 @@ export default function Sections() {
                     <h2 className="text-3xl text-white mt-16" dangerouslySetInnerHTML={{ __html: chaosCopy.vampiring.title }}></h2>
                 </div>
                 <div className="md:w-[70%] w-[90%] mx-auto border-2 border-white p-4 my-20 bg-black">
-                    <div className="w-full flex flex-wrap lg:flex-nowrap justify-between">
-                        <div className="flex">
+                    <div className="flex items-center justify-between gap-4">
+                        <div className="flex-1 bg-gray px-4 py-3 flex items-center gap-3">
                             <Image
                                 src={chaosCopy.body.card[0].image ? chaosCopy.body.card[0].image.src : ''}
                                 alt={chaosCopy.body.card[0].image ? chaosCopy.body.card[0].image.alt : ''}
@@ -24,7 +24,9 @@ export default function Sections() {
                                 className="h-[36px] w-[35px] rounded-full" />
                             <span className="text-lg mx-2">{chaosCopy.body.card[0].title}</span>
                         </div>
-                        <p className="font-verdana">{chaosCopy.body.card[0].description}</p>
+                        <div className="flex-1 px-4 py-3 items-center gap-3 text-end">
+                            <p className="font-verdana">{chaosCopy.body.card[0].description}</p>
+                        </div>
 
                     </div>
                     <div className="flex flex-wrap lg:flex-nowrap justify-between items-center">
