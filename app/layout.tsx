@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "WEWE - Together We Earn",
+  
   description: "WeWe Swap - Together We Earn",
   metadataBase: new URL("https://weweswap.com"),
   keywords: ['WeWe', 'WeWe Swap', "WeWe Token"],
