@@ -35,7 +35,7 @@ export default function Footer() {
         <footer>
             {pathName != "/" &&
                 <div className="w-full flex justify-center items-center px-3">
-                    <Image src="/img/footer-logo.png" width={600} height={95} alt="" />
+                    <video src="/img/animation.mp4" width="600" height="95" alt="" autoplay loop muted />
                 </div>
             }
             <div className="w-full flex justify-center items-center my-20">
