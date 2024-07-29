@@ -14,7 +14,7 @@ export default function Sections() {
                 <h1 className="uppercase leading-relaxed font-black dogica-bold lg:text-6xl text-2xl  text-center color-turquoise" dangerouslySetInnerHTML={{ __html: landingCopy.header.subTitle }}></h1>
                 <IconBottomRightBorder />
             </div>
-            <div className="w-full flex justify-center items-center mt-20 px-3">
+            <div className="w-[80%] md:w-max mx-auto mt-24 relative">
                 <video width="600" height="95" autoPlay loop muted>
                     <source src="/img/animation.mp4" type="video/mp4" />
                 </video>
