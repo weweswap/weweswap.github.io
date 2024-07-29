@@ -15,9 +15,9 @@ export default function Sections() {
                 <IconBottomRightBorder />
             </div>
             <div className="w-full flex justify-center items-center mt-20 px-3">
-                    <video width="600" height="95" autoplay loop muted>
-                        <source src="/img/animation.mp4" type="video/mp4" />
-                    </video>
+                <video width="600" height="95" autoPlay loop muted>
+                    <source src="/img/animation.mp4" type="video/mp4" />
+                </video>
             </div>
 
             <div className="w-[90%] lg:w-max  border-4 border-liberty rounded-lg  mx-auto mt-20" style={{ padding: '5px' }}>
