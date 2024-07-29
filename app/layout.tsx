@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     description: "We Love Yields!",
     url: 'https://weweswap.com',
     type: "website",
-    images: 'https://weweswap.com/img/wewe-thumbnail1.png',
+    images: 'https://weweswap.com/img/wewe-thumbnail2.png',
   },
   twitter: {
     site: "weweswap.com",
     card: "summary_large_image",
     title: "WeWe - Together We Earn",
     description: "We Love Yields!",
-    images: "https://weweswap.com/img/wewe-thumbnail1.png"
+    images: "https://weweswap.com/img/wewe-thumbnail2.png"
   },
   icons: {
     icon: [
