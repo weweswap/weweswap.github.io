@@ -2,8 +2,6 @@ import { IconBottomRightBorder } from "@/app/assets/icons/BottomRightBorder";
 import { IconTopLeftBorder } from "@/app/assets/icons/TopLeftBorder";
 import { landingCopy } from "@/app/copy/landing";
 import { headerCopy } from "@/app/copy/header";
-import Lottie from 'react-lottie-player'
-import lottieFile from '@/public/img/animation.json'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +15,9 @@ export default function Sections() {
                 <IconBottomRightBorder />
             </div>
             <div className="w-[80%] md:w-max mx-auto mt-24 relative">
-                    <Lottie loop animationData={lottieFile} play />
+                <video width="600" height="95" autoPlay loop muted>
+                    <source src="/img/animation.mp4" type="video/mp4" />
+                </video>
             </div>
 
             <div className="w-[90%] lg:w-max  border-4 border-liberty rounded-lg  mx-auto mt-20" style={{ padding: '5px' }}>
