@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "WEWE - Together We Earn",
-  description: "WeWe Swap - Together We Earn",
+  title: "WEWE - Together We Earn - We Love Yields!",
+  description: "WeWe Swap - Together We Earn.YOUR EARNINGS ACRUE AS USDC (YAY).NO MATTER THE POOL YOU ARE IN! NEVER WORRY ABOUT LOSING IT! And just for fun, we are going to vampire attack all other meme coins",
   metadataBase: new URL("https://weweswap.com"),
-  keywords: ['WeWe', 'WeWe Swap', "WeWe Token"],
+  keywords: ['WeWe', 'WeWe Swap', "WeWe Token", "DeFi", "MEME" , "MEME Coin","DeFi" , "USDC Yield" ,"Yields"],
   authors: [{ name: 'Wewe' }, { name: 'Wewe', url: 'weweswap.com' }],
   openGraph: {
     siteName: 'WeWe',
