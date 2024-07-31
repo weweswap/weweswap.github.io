@@ -25,7 +25,7 @@ export default function Header() {
                 </div>
                 <div className="hidden md:flex gap-x-12 mx-4">
                     {headerCopy.navbarLinks.map((link, index) => (
-                        <Link key={index} href={link.url} className="lg:text-2xl text-lg font-normal leading-6 text-yellow">{link.name}</Link>
+                        <Link key={index} href={link.url} className="lg:text-2xl text-lg font-normal leading-6 text-yellow cursor-default">{link.name}</Link>
                     ))}
                 </div>
                 <div className="hidden md:flex flex-1 justify-end">
