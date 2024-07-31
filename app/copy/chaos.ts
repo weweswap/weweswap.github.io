@@ -33,7 +33,7 @@ export const chaosCopy = {
                 ],
                 btn: {
                     title: 'Migrate',
-                    url: 'https://app.weweswap.com/'
+                    url: 'https://app.weweswap.com/merge'
                 },
             },
         ],

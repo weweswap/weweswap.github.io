@@ -11,7 +11,7 @@ export const earningsCopy = {
                 description: "234.54 USDC",
                 btn: {
                     title: "Claim",
-                    url: "https://app.weweswap.com/"
+                    url: "https://app.weweswap.com/merge"
                 },
             },
         ],

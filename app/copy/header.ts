@@ -2,23 +2,23 @@ export const headerCopy = {
     navbarLinks: [
         {
             name: "POOLS",
-            url: "/pools",
-            target: "_self"
+            url: "",
+            target: ""
         },
         {
             name: "EARNINGS",
-            url: "/earnings",
-            target: "_self"
+            url: "",
+            target: ""
         },
         {
             name: "CHAOS",
-            url: "/chaos",
-            target: "_self"
+            url: "",
+            target: ""
         }
     ],
     button: {
         name: "LAUNCH",
-        url: "https://app.weweswap.com/",
+        url: "https://app.weweswap.com/merge",
         target: "_blank"
     }
 }
