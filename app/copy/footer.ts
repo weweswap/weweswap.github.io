@@ -8,8 +8,14 @@ export const footerCopy = {
         },
         {
             title: "Discord",
-            href: "https://discord.com/invite/cV95JF7kGM",
+            href: "https://discord.gg/cV95JF7kGM",
             image: "/img/discord.svg",
+            target: "_blank"
+        },
+        {
+            title: "Telegram",
+            href: "http://t.me/weweonbase",
+            image: "/img/telegram.svg",
             target: "_blank"
         },
         {
