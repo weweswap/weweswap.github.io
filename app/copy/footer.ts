@@ -15,7 +15,7 @@ export const footerCopy = {
         {
             title: "Telegram",
             href: "http://t.me/weweonbase",
-            image: "/img/discord.svg",
+            image: "/img/telegram.svg",
             target: "_blank"
         },
         {
