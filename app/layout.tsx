@@ -4,7 +4,7 @@ import "./globals.scss";
 import Header from "./shared-componets/header";
 import Footer from "./shared-componets/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />
