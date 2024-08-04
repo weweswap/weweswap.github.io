@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'VCR_OSD_MONO';
-    src: url('/fonts/VCR_OSD_MONO_1.001-1.ttf') format('ttf'),
-        url('/fonts/VCR_OSD_MONO_1.001 2.woff') format('woff'),
-        url('/fonts/VCR_OSD_MONO_1.001 2.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Verdana';
-    src: url('/fonts/Verdana.ttf') format('ttf'),
-        url('/fonts/verdanab.eot') format('eot'),
-        url('/fonts/Verdana.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Dogica';
-    src: url('/fonts/Dogica.ttf') format('ttf'),
-        url('/fonts/Dogica.woff') format('woff'),
-        url('/fonts/Dogica.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Dogica Bold';
-    src: url('/fonts/Dogica Bold.ttf') format('ttf'),
-        url('/fonts/Dogica Bold.woff') format('woff'),
-        url('/fonts/Dogica Bold.woff2') format('woff2');
-}
 
 $color-liberty : #5A5CAF;
 $color-dandelion: #FFD911;
@@ -43,7 +16,6 @@ body {
     color: #FFF;
     overflow-x: hidden;
     background: url(../public/img/bg-pattern.png) #000 center top repeat-y !important;
-    font-family: 'Dogica' !important;
 }
 
 .color-turquoise {
@@ -66,15 +38,7 @@ body {
     border-color: $color-persian-blue;
 }
 
-.dogica-bold {
-    font-family: "Dogica Bold";
-}
-.dogica {
-    font-family: "Dogica";
-}
-.font-verdana {
-    font-family: "Verdana";
-}
+
 .bg-black{
     background-color: #000;
 }

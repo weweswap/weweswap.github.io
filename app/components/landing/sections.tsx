@@ -21,7 +21,7 @@ export default function Sections() {
       <div className="w-[80%] md:w-max mx-auto mt-24 relative ">
         <IconTopLeftBorder />
         <h1
-          className="uppercase leading-relaxed font-black dogica-bold lg:text-6xl text-2xl  text-center color-turquoise"
+          className="uppercase leading-relaxed font-bold  lg:text-6xl text-2xl  text-center color-turquoise"
           dangerouslySetInnerHTML={{ __html: landingCopy.header.subTitle }}
         ></h1>
         <IconBottomRightBorder />
@@ -41,7 +41,7 @@ export default function Sections() {
         <div className="bg-pink lg:w-max w-full lg:px-10 px-3 py-3 ">
           <a
             href={headerCopy.button.url}
-            className="font-black dogica-bold lg:text-3xl text-black "
+            className="font-bold  lg:text-3xl text-black "
             dangerouslySetInnerHTML={{ __html: landingCopy.cta.buttonText }}
           ></a>
         </div>
@@ -49,7 +49,7 @@ export default function Sections() {
 
       {/* Problem */}
       <div className="flex items-center justify-center mt-36 px-3">
-        <h2 className="color-dandelion font-black dogica-bold lg:text-4xl text-2xl">
+        <h2 className="color-dandelion font-bold  lg:text-4xl text-2xl">
           {landingCopy.problemSection.title}
         </h2>
         <Image
@@ -70,7 +70,7 @@ export default function Sections() {
               alt={item.title}
               className="mx-auto my-4"
             />
-            <h3 className="color-dandelion dogica-bold font-black my-4 ">
+            <h3 className="color-dandelion  font-bold my-4 ">
               {item.title}
             </h3>
             <ul>
@@ -79,7 +79,7 @@ export default function Sections() {
                   key={index}
                   className="list-disc w-max mx-auto leading-10 lg:px-3 lg:text-base text-sm"
                 >
-                  {description}{" "}
+                  {description}
                 </li>
               ))}
             </ul>
@@ -87,7 +87,7 @@ export default function Sections() {
         ))}
       </div>
 
-      <h3 className="uppercase dogica-bold lg:text-3xl text-xl mt-40">
+      <h3 className="uppercase  lg:text-3xl text-xl mt-40">
         {landingCopy.problemSection.note}
       </h3>
       <h4 className="uppercase  my-20 lg:text-2xl text-lg">
@@ -97,7 +97,7 @@ export default function Sections() {
       {/* Solution */}
 
       <div className="flex items-center justify-center mt-44">
-        <h2 className="color-turquoise font-black dogica-bold lg:text-4xl text-2xl">
+        <h2 className="color-turquoise font-bold  lg:text-4xl text-2xl">
           {landingCopy.solutionSection.title}
         </h2>
         <Image
@@ -119,11 +119,10 @@ export default function Sections() {
               className="mx-auto my-4"
             />
             <h3
-              className="text-pink dogica-bold font-black my-4 text-xl leading-8 "
+              className="text-pink  font-bold my-4 text-xl leading-8 "
               dangerouslySetInnerHTML={{ __html: item.title }}
             ></h3>
             <p className="leading-8 md:px-20 px-3 lg:text-base text-sm">
-              {" "}
               {item.description}
             </p>
           </div>
