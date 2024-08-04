@@ -29,7 +29,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden md:flex flex-1 justify-end">
-                    <a href={headerCopy.button.url} target={headerCopy.button.target} className="text-lg font-black dogica-bold leading-6 text-black flex justify-center items-center bg-pink h-[43px] lg:w-[232px] w-[150px]">{headerCopy.button.name}</a>
+                    <a href={headerCopy.button.url} target={headerCopy.button.target} className="text-lg font-bold  leading-6 text-black flex justify-center items-center bg-pink h-[43px] lg:w-[232px] w-[150px]">{headerCopy.button.name}</a>
                 </div>
 
             </nav>
