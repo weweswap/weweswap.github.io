@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import "./globals.scss";
 import Header from "./shared-componets/header";
 import Footer from "./shared-componets/footer";
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "WeWe Swap - Together We Earn.YOUR EARNINGS ACRUE AS USDC (YAY).NO MATTER THE POOL YOU ARE IN! NEVER WORRY ABOUT LOSING IT! And just for fun, we are going to vampire attack all other meme coins",
   metadataBase: new URL("https://weweswap.com"),
   keywords: [
+    "WeWeSwap",
     "WeWe",
     "WeWe Swap",
     "WeWe Token",
@@ -54,13 +56,74 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const ldJson = JSON.stringify([
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      id: "https://www.weweswap.com",
+      name: "weweswap",
+      alternateName: ["weweswap"],
+      legalName: "WEWE SWAP",
+      url: "https://www.weweswap.com",
+      logo: "",
+      email: "info@weweswap.com",
+      sameAs: [
+        "https://x.com/weweswap",
+        "https://discord.gg/cV95JF7kGM",
+        "http://t.me/weweonbase",
+        "https://github.com/weweswap",
+      ],
+      founders: [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          image: "",
+          jobTitle: "Founder",
+          name: "JP Thor",
+          sameAs: [
+            "https://twitter.com/jpthor",
+            "https://www.instagram.com/jpthor/",
+            "https://www.github.com/jpthor",
+            "https://www.tiktok.com/@jpthor89",
+            "https://www.youtube.com/@jpthor",
+            "https://www.linkedin.com/in/jpthor/"
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      id: "https://www.weweswap.com",
+      name: "weweswap",
+      url: "https://www.weweswap.com",
+      copyrightHolder: {
+        "@type": "Corporation",
+        id: "https://www.weweswap.com",
+        name: "weweswap"
+      },
+      creator: {
+        "@type": "Corporation",
+        id: "https://weweswap.com",
+        name: "weweswap"
+      }
+    }
+  ]);
+
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: ldJson }}
+        />
+      </Head>
       <body className={dogica.className}>
         <Header />
         {children}
