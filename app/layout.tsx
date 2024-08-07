@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     site: "weweswap.com",
     card: "summary_large_image",
-    title: "WeWe - Together We Earn",
-    description: "We Love Yields!",
+    title: "Together We Earn - WEWESWAP | $WEWE",
+    description: "WEWESWAP | $WEWE",
     images: "https://weweswap.com/img/wewe-thumbnail2.png",
   },
   icons: {
