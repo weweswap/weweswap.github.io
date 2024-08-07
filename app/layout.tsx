@@ -8,7 +8,7 @@ import { dogica } from "./fonts";
 export const metadata: Metadata = {
   title: "WEWE - Together We Earn - We Love Yields!",
   description:
-    "WeWe Swap - Together We Earn.YOUR EARNINGS ACRUE AS USDC (YAY).NO MATTER THE POOL YOU ARE IN! NEVER WORRY ABOUT LOSING IT! And just for fun, we are going to vampire attack all other meme coins",
+    "Together We Earn - WEWESWAP | $WEWE",
   metadataBase: new URL("https://weweswap.com"),
   keywords: [
     "WeWeSwap",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Wewe" }, { name: "Wewe", url: "weweswap.com" }],
   openGraph: {
     siteName: "WeWe",
-    title: "WeWe - Together We Earn ",
-    description: "We Love Yields!",
+    title: "Together We Earn - WEWESWAP | $WEWE",
+    description: "WEWESWAP | $WEWE",
     url: "https://weweswap.com",
     type: "website",
     images: "https://weweswap.com/img/wewe-thumbnail2.png",
