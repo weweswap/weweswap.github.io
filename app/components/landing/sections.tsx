@@ -29,7 +29,7 @@ export default function Sections() {
       </div>
       <div className="w-[80%] h-[95px] md:w-max mx-auto mt-24 relative">
         {isLoaded && (
-          <div className="lg:w-[600px] md:w-full">
+          <div className="md:w-[600px] w-full">
             <Lottie animationData={animation} />
           </div>
         )}
