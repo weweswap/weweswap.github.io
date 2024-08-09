@@ -4,8 +4,9 @@ import { IconTopLeftBorder } from "@/app/assets/icons/TopLeftBorder";
 import { landingCopy } from "@/app/copy/landing";
 import { headerCopy } from "@/app/copy/header";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import animation from "../../../public/img/animation.json";
+import Lottie from "lottie-react";
 
 export default function Sections() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,9 +29,9 @@ export default function Sections() {
       </div>
       <div className="w-[80%] h-[95px] md:w-max mx-auto mt-24 relative">
         {isLoaded && (
-          <video width="600" height="95" autoPlay loop muted>
-            <source src="/img/animation.mp4" type="video/mp4" />
-          </video>
+          <div className="md:w-[600px] w-full">
+            <Lottie animationData={animation} />
+          </div>
         )}
       </div>
 
@@ -70,9 +71,7 @@ export default function Sections() {
               alt={item.title}
               className="mx-auto my-4"
             />
-            <h3 className="color-dandelion  font-bold my-4 ">
-              {item.title}
-            </h3>
+            <h3 className="color-dandelion  font-bold my-4 ">{item.title}</h3>
             <ul>
               {item.description.map((description, index) => (
                 <li
