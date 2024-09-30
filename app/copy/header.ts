@@ -1,20 +1,20 @@
 export const headerCopy = {
   navbarLinks: [
-    // {
-    //     name: "POOLS",
-    //     url: "",
-    //     target: ""
-    // },
-    // {
-    //     name: "EARNINGS",
-    //     url: "",
-    //     target: ""
-    // },
-    // {
-    //     name: "CHAOS",
-    //     url: "",
-    //     target: ""
-    // }
+    {
+      name: "POOLS",
+      url: "",
+      target: "",
+    },
+    {
+      name: "EARNINGS",
+      url: "",
+      target: "",
+    },
+    {
+      name: "CHAOS",
+      url: "",
+      target: "",
+    },
   ],
   button: {
     name: "LAUNCH",
