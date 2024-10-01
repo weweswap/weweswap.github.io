@@ -17,7 +17,7 @@ export default function Header() {
                         <Image src="/img/logo.svg" alt="WeWe Logo" width={142} height={57} className="object-contain" />
                     </Link>
                 </div>
-                <div className="flex md:hidden">
+                <div className="hidden">
                     <OffcanvasProvider onOpen={handleOpen} onClose={handleClose}>
                         <Trigger />
                         <Offcanvas />
@@ -28,7 +28,7 @@ export default function Header() {
                         <Link key={index} href={link.url} className="lg:text-2xl text-lg font-normal leading-6 text-yellow cursor-default">{link.name}</Link>
                     ))} */}
                 </div>
-                <div className="hidden md:flex flex-1 justify-end">
+                <div className="flex flex-1 justify-end">
                     <a href={headerCopy.button.url} target={headerCopy.button.target} className="text-lg font-bold  leading-6 text-black flex justify-center items-center bg-pink h-[43px] lg:w-[232px] w-[150px]">{headerCopy.button.name}</a>
                 </div>
 
